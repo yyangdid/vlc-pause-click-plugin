@@ -66,6 +66,8 @@ elif [ "$TARGET" = "macOS" ]; then
   ln -sf libvlccore.*.dylib libvlccore.dylib
   cd ../..
   make OS=macOS
+  ls -lh libpause_click_plugin.dylib
   strip libpause_click_plugin.dylib
+  ls -lh libpause_click_plugin.dyli
   zip -j vlc-$VLC_VERSION-macosx.zip libpause_click_plugin.dylib
 fi
